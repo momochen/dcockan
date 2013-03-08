@@ -1,0 +1,32 @@
+{% ckan_extends %}
+
+{% block package_description %}
+  {{ super() }}
+
+  <!-- Add our custom country_code field to the dataset read page. -->
+  {% if pkg.get('datatypes') %}
+    <section id="dataset-datatypes" class="resources module-content">
+    <p><strong>Datatypes</strong>: {{ pkg.datatypes[0] }}</p>
+    </section>
+  {% endif %}
+  
+  {% if pkg.get('keywords') %}
+    <section id="dataset-keywords" class="resources module-content">
+    <p><strong>Keywords</strong>: {{ pkg.keywords[0] }}</p>
+    </section>
+  {% endif %}
+
+  {% if pkg.get('country_code') %}
+    <section id="dataset-country_code" class="resources module-content">
+    <p><strong>Country Code</strong>: {{ pkg.country_code[0] }}</p>
+    </section>
+  {% endif %}
+  
+  {% if pkg.get('language') %}
+    <section id="dataset-language" class="resources module-content">
+    <p><strong>Language</strong>: {{ pkg.language[0] }}</p>
+    </section>
+  {% endif %}
+
+
+{% endblock %}

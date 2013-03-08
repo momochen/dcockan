@@ -1,0 +1,11 @@
+setup.py
+ckanext/__init__.py
+ckanext/dcoform/__init__.py
+ckanext/dcoform/plugin.py
+ckanext_dcoform.egg-info/PKG-INFO
+ckanext_dcoform.egg-info/SOURCES.txt
+ckanext_dcoform.egg-info/dependency_links.txt
+ckanext_dcoform.egg-info/entry_points.txt
+ckanext_dcoform.egg-info/namespace_packages.txt
+ckanext_dcoform.egg-info/not-zip-safe
+ckanext_dcoform.egg-info/top_level.txt

@@ -1,0 +1,6 @@
+
+        [ckan.plugins]
+	# Add plugins here, eg
+	dcoform=ckanext.dcoform.plugin:ExampleIDatasetFormPlugin
+
+	
